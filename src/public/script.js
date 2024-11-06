@@ -5,7 +5,7 @@ const QRShowBox = document.getElementById("main-c-three")
 urlBtn.addEventListener('click', async (res)=>{
     const url = inputBox.value;
     if(url != ''){
-        const serverResponse = await fetch('https://generate-qr-code-ef8s.vercel.app/guru/generate/qrobject',{
+        const serverResponse = await fetch('https://generate-qr-code-pi.vercel.app//guru/generate/qrobject',{
             method:"POST",
             headers:{
                'Content-Type':'application/json' 
