@@ -51,3 +51,47 @@ function createUi(url){
         document.getElementById('clickOnMe').click()
     })
 }
+
+const flag = false;
+apiBtn.addEventListener('click', (res) => {
+    const divElement = document.getElementById('api-div-box')
+    if(divElement.style.display == 'block'){
+        divElement.style.display = 'none'
+    }else{
+        divElement.style.display = 'block'
+    }
+	
+})
+
+window.addEventListener('load',()=>{insertAPIUi()})
+
+function insertAPIUi(){
+    const listData = [
+		'request on : https://localhost:8621/gurunath/generate/[qrobject Or imgelement]',
+		'/qrobject : to get json object ',
+		'/imgelement: to get <img src=[url] alt=”qr code”>',
+	]
+	const divBox = document.createElement('div')
+	const childDivOne = document.createElement('div')
+	const childDivTwo = document.createElement('div')
+    divBox.setAttribute('id',"api-div-box");
+
+	const spanElement = document.createElement('span')
+	const text = document.createTextNode('Build an QR Code Generator Using this free Open Source API')
+	spanElement.appendChild(text)
+
+	const listElement = document.createElement('ul')
+
+	for (let item of listData) {
+		const liElement = document.createElement('li')
+		const liText = document.createTextNode(item)
+		liElement.appendChild(liText)
+		listElement.appendChild(liElement)
+	}
+
+    childDivOne.appendChild(spanElement);
+    childDivTwo.appendChild(listElement);
+    divBox.appendChild(childDivOne)
+    divBox.appendChild(childDivTwo)
+    document.body.appendChild(divBox)
+}
