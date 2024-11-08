@@ -1,7 +1,7 @@
 const urlBtn = document.getElementById("url-submit-btn")
 const inputBox = document.getElementById("url-box")
 const QRShowBox = document.getElementById("main-c-three")
-
+const apiBtn = document.getElementById('api-description')
 urlBtn.addEventListener('click', async (res)=>{
     const url = inputBox.value;
     if(url != ''){
