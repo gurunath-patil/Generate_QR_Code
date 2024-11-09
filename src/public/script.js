@@ -5,7 +5,7 @@ const apiBtn = document.getElementById('api-description')
 urlBtn.addEventListener('click', async (res)=>{
     const url = inputBox.value;
     if(url != ''){
-        const serverResponse = await fetch('https://generate-qr-code-xi.vercel.app/guru/generate/qrobject',{
+        const serverResponse = await fetch('https://generate-qr-code-omega.vercel.app/guru/generate/qrobject',{
             method:"POST",
             headers:{
                'Content-Type':'application/json' 
