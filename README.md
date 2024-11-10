@@ -1,4 +1,4 @@
-## QR Code Generator API
+# QR Code Generator API
 
 ## Overview
 
@@ -16,25 +16,29 @@ Method: POST
 Request Body:{
 url:"your input data"
 }
-Response: QR code image json object  or  <img src={url} alt="QR Code">
+
+Response: QR code image json object  or  `<img src={url} alt="QR Code">`
 
 ## Example Request
 
-1. fetch(https://generate-qr-code-omega.vercel.app/gurunath/generate/qrobject,{
+1. ````javascript
+   fetch(https://generate-qr-code-omega.vercel.app/gurunath/generate/qrobject,{
+   method:"POST",
+   body:JSON.Stringify({
+   url:[yourText]
+   })
+   })
+   
+  - output: {url:'qrCode.png'}
+  
+
+2. ````javascript
+   fetch(https://generate-qr-code-omega.vercel.app/gurunath/generate/imgelement,{
    method:"POST",
    body:JSON.Stringify({
    url:[yourText]
    })
    })
 
-  output: {url:'qrCode.png'}
-
-2. fetch(https://generate-qr-code-omega.vercel.app/gurunath/generate/imgelement,{
-   method:"POST",
-   body:JSON.Stringify({
-   url:[yourText]
-   })
-   })
-
-  output: <img src="qrCode.png" alt="QR Code"/>
+  - output: <img src="qrCode.png" alt="QR Code"/>
 
