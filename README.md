@@ -37,5 +37,5 @@ Response: QR code image json object  or  `<img src={url} alt="QR Code">`
    })
    })
 
-  - output: <img src="qrCode.png" alt="QR Code"/>
+  - output: `<img src="qrCode.png" alt="QR Code"/>`
 
