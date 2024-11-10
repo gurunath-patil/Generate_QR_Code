@@ -11,8 +11,8 @@ A simple QR Code Generator API built with Node.js and EJS, allowing users to gen
 
 ## API Documentation
 
-URL: https://generate-qr-code-omega.vercel.app/gurunath/generate/[/qrobject or /imgelement]
-Method: POST
+- URL: https://generate-qr-code-omega.vercel.app/gurunath/generate/[/qrobject or /imgelement]
+- Method: POST
 
 Response: QR code image json object  or  `<img src={url} alt="QR Code">`
 
