@@ -67,7 +67,7 @@ window.addEventListener('load',()=>{insertAPIUi()})
 
 function insertAPIUi(){
     const listData = [
-		'request on : https://localhost:8621/gurunath/generate/[qrobject Or imgelement]',
+		'request on : https://generate-qr-code-omega.vercel.app/gurunath/generate/[qrobject Or imgelement]',
 		'/qrobject : to get json object ',
 		'/imgelement: to get <img src=[url] alt=”qr code”>',
 	]
